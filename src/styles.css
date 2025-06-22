@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f6f9fb;
+  color: #222;
+}
+
+.maktinta-calc {
+  max-width: 1040px;
+  margin: 32px auto;
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: none;
+  padding-bottom: 40px;
+}
+
+.maktinta-header {
+  display: flex;
+  align-items: center;
+  padding: 28px 36px 18px 36px;
+  background: #3571b8;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 32px rgba(50, 60, 90, 0.09);
+}
+
+.maktinta-logo {
+  height: 54px;
+  width: auto;
+  margin-right: 32px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 2px 7px;
+  border: 1px solid #e4eaf2;
+}
+
+.maktinta-header-center {
+  flex: 1;
+  text-align: center;
+}
+
+.maktinta-header h1 {
+  margin: 0 0 7px 0;
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.contact-bar {
+  font-size: 1.07rem;
+  color: #e6f0fa;
+  margin-bottom: 0;
+}
+
+.contact-bar a {
+  color: #e0edff;
+  text-decoration: none;
+}
+
+.maktinta-main {
+  background: #f6f9fb;
+  padding: 40px 36px 0 36px;
+  border-radius: 0 0 20px 20px;
+}
+
+.maktinta-row {
+  display: flex;
+  gap: 32px;
+}
+
+.input-section,
+.results-section {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(50, 60, 90, 0.04);
+  padding: 32px 28px 22px 28px;
+  margin-bottom: 0;
+  flex: 1 1 0;
+  min-width: 320px;
+}
+
+.input-section {
+  border: 1px solid #e4eaf2;
+}
+
+.results-section {
+  border: 1px solid #e4eaf2;
+}
+
+.graphics-section {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(50, 60, 90, 0.05);
+  margin-top: 32px;
+  padding: 32px 28px 24px 28px;
+  max-width: 100%;
+  border: 1px solid #e4eaf2;
+}
+
+.input-section h2,
+.results-section h2 {
+  color: #3571b8;
+  margin-bottom: 18px;
+  font-size: 1.23rem;
+  font-weight: 700;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 22px;
+  font-weight: 600;
+  font-size: 1.07rem;
+  color: #295180;
+  letter-spacing: 0.01em;
+}
+
+.input-section input[type="number"],
+.input-section input[type="text"],
+.input-section select {
+  width: 95%;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #dde6ee;
+  background: #fafdff;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input-section input[type="number"]:focus,
+.input-section input[type="text"]:focus,
+.input-section select:focus {
+  border: 1.5px solid #3571b8;
+  background: #fff;
+}
+
+.input-section input[type="checkbox"] {
+  margin-right: 6px;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+  accent-color: #3571b8;
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 6px;
+  margin-bottom: 18px;
+}
+
+.summary-table th {
+  text-align: left;
+  color: #326db3;
+  font-weight: 700;
+  background: none;
+  border: none;
+  padding: 4px 0 4px 0;
+  width: 55%;
+  font-size: 1.03rem;
+}
+
+.summary-table td {
+  text-align: right;
+  color: #222;
+  background: #f6f9fb;
+  border-radius: 7px;
+  padding: 4px 9px 4px 6px;
+  font-size: 1.03rem;
+}
+
+.summary-total-cost {
+  background: #eaf2fb;
+  color: #15549c;
+  border-radius: 14px;
+  font-size: 1.15rem;
+  padding: 11px 0;
+  margin: 16px 0 2px 0;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(53, 113, 184, 0.07);
+}
+
+.pdf-btn {
+  background: #3571b8;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  padding: 11px 30px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 0;
+  cursor: pointer;
+  box-shadow: 0 1.5px 5px rgba(53, 113, 184, 0.07);
+  transition: background 0.18s, color 0.18s;
+}
+
+.pdf-btn:hover,
+.pdf-btn:focus {
+  background: #2a5a91;
+  color: #e5eefa;
+}
+
+.pdf-btn:active {
+  background: #1d466c;
+}
+
+.pdf-btn[style*="#bbb"] {
+  background: #eaeaea !important;
+  color: #1c2c3d !important;
+  border: 1px solid #dde6ee;
+}
+
+.disclaimer {
+  margin-top: 24px;
+  background: #ffe6e1;
+  color: #b54735;
+  border-radius: 18px;
+  padding: 15px 22px 13px 22px;
+  font-size: 1.03rem;
+  font-weight: 500;
+  box-shadow: 0 1.5px 6px rgba(204, 96, 74, 0.08);
+  border: none;
+}
+
+.disclaimer a {
+  color: #b54735;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .maktinta-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .input-section,
+  .results-section,
+  .graphics-section {
+    padding: 18px 10px 12px 10px;
+    min-width: 0;
+  }
+  .maktinta-main {
+    padding: 10px 2px 0 2px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: #dde6ee;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d2e1f5;
+  border-radius: 10px;
+}
